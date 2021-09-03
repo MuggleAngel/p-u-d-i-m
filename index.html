@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P.U.D.I.M</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <link rel="stylesheet" href="src/public/css/estilo.css">
+    <link rel="shortcut icon" href="../../public/img/grafico.png" />
+</head>
+<body>
+    <div class="container">
+        <!--uma coluna-->
+        <div class="row">
+            <div class="col col-content1">
+                <div class="card-total-informe">
+                    <div class="font-letra">Painel</div>
+                    <div class="font-letra-titulo">COVID-19</div>
+                    <p>API-COVID-19: <a href="https://painel-covid.herokuapp.com/">https://painel-covid.herokuapp.com/api</a></p>
+                </div>
+            </div>
+
+            <div class="col col-sidebar1">
+                <div class="card-total-sobre">
+                    <div class="input-wrapper">
+                        <div class="card-grp">
+                            <div class="card-input">Sobre o Desenvolvedor</div>
+                            <div class="arrow">
+                                <i class="fas fa-caret-down fa-lg"></i>
+                            </div>
+                        </div>
+                        <div class="card-total-sobre-foto card-list">
+                            <img class="img-perfil" src="../../public/img/perfil.jpg" alt="">
+                            <p>Jonathan C. Lopes Domingos</p>
+                            </br>
+                            <p>Desenvolvedor SW2 - SONDA</p>
+                            </br>
+                            <p>
+                                Olá, sou analista de dados e desenvolvedor de soluções para visualização de dashboards e
+                                tenho um grande apreço por python e javascript. 
+                            </p>
+
+                            </br>
+                            <p>Mais sobre mim:</p>
+                        </br>
+                            <button onclick="window.open('https://github.com/Jonathan-geo');">FACEBOOK</button>
+                            <button onclick="window.open('https://www.linkedin.com/in/jonathan-domingos-b98b76160/');">LINKEDIN</button>
+                            <button onclick="window.open('https://twitter.com/jonathan_cdso');">TWITTER</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <!--Coluna com sidebar PARTE 1-->
+        <div class="row">
+            <div class="col col-content1">
+                <div class="card-total-grafico">
+                    <div id="pieChartContent">
+                        <canvas id="grafico2" width="500" height="360"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col col-sidebar1">
+                <div class="card-total">
+                    <div id="numData" value="2020-10" class="numero"></div>
+                    <div class="letraEllen">Data de Atualização</div>
+                </div>
+
+                <div class="card-total">
+                    <div id="numObitos" class="numero"></div>
+                    <div class="letraEllen">Jogos de Açao</div>
+                    <div class="font-letra">Call Off Duty</div>
+                </div>
+
+                <div id="degrade" class="card-total-grafico-pie">
+                    <img class="imgff" src="src/public/img/ff7.jpg">
+                </div>
+
+                <div class="cardSt">
+                    <img class="imgSt" src="src/public/img/stella.gif">
+                </div>
+
+
+
+            </div>
+        </div>
+
+
+       
+
+        <!--Coluna com sidebar PARTE 2-->
+        <div class="row">
+
+            <div class="col col-content">
+                <div class="card-total-grafico">
+                    <iframe 
+                        width="670" height="355" 
+                        src="https://www.youtube.com/embed/NEINJ3Ew04U" 
+                        title="YouTube video player" frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="col col-sidebar">
+                <div class="card-total-grafico-table">
+                    <div id= "tableContent" class="scrollBar">
+                        <div id="pieChartContent">
+                            <canvas id="graficoConquistas" width="500" height="360"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row -->
+
+        <div class="row">
+            <div class="col col">
+                <div class="card-total-informe">
+                    <p>Jonathan C. Lopes Domingos</p>
+                    <p>Desenvolvedor SW2 - SONDA</p>
+                    <button onclick="window.open('https://github.com/Jonathan-geo');">GITHUB</button>
+                    <button onclick="window.open('https://www.linkedin.com/in/jonathan-domingos-b98b76160/');">LINKEDIN</button>
+                    <button onclick="window.open('https://twitter.com/jonathan_cdso');">TWITTER</button>
+                    <p>Fonte dos dados e inspiração de layout: <a href="https://covid.saude.gov.br/">covid.saude.gov.br</a></p>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div> <!-- fecha container -->
+
+    <script src="src/public/js/jquery.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js" type="text/javascript"></script>
+    <script src="../../public/js/appChart.js" type="text/javascript"></script>
+    <script src="src/public/js/pluginApp.js" type="text/javascript"></script>
+</body>
+</html>

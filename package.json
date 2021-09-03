@@ -1,0 +1,17 @@
+{
+  "name": "elproject",
+  "version": "1.0.0",
+  "description": "Meu site",
+  "main": "index.js",
+  "scripts": {
+    "sever": "node server.js" ,
+    "dev": "nodemon server.js"
+  },
+  "author": "Ellen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
+  }
+}
