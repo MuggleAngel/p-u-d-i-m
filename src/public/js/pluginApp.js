@@ -11,12 +11,12 @@ $(document).ready(function(){
 
 function graficoConquistas(){
 
-    var regiaoLabel = ["Prata", "Nordeste", "Sudeste", "Sul", "Centro-Oeste"];
-    var Prata = 23;
-    var Nordeste = 3;
-    var Sudeste = 67;
-    var Sul = 21;
-    var Oeste = 45;
+    var regiaoLabel = ["HumanFallFlat", "Minecraft", "Astroneer", "Knockout", "Spiritfarer"];
+    var HumanFallFlat = 43;
+    var Minecraft = 49;
+    var Astroneer = 26;
+    var Knockout = 21;
+    var Spiritfarer = 16;
     // var casosAcumulados = [];
 
     var ctx = document.getElementById('graficoConquistas').getContext('2d');
@@ -26,8 +26,8 @@ function graficoConquistas(){
         data: {
             labels: regiaoLabel,
             datasets: [{ 
-                data: [Prata, Nordeste, Sudeste, Sul, Oeste],
-                label: "Casos notificados",
+                data: [HumanFallFlat, Minecraft, Astroneer, Knockout, Spiritfarer],
+                label: "graficoConquistas",
                 borderColor: "#3e95cd",
                 backgroundColor: ['rgb(0, 139, 139)','rgb(255, 99, 132)', 'rgb(255, 199, 132)', 'rgb(55, 99, 132)', 'rgb(33, 99, 132)'],
                 fill: false
@@ -40,7 +40,7 @@ function graficoConquistas(){
         options: {
             title: {
                 display: true,
-                text: 'CASOS E ÓBTOS POR ESTADO'
+                text: 'Algumas conquistas'
             }
         }
     });
@@ -50,8 +50,8 @@ function graficoConquistas(){
 
 
 function grafico2sp(){
-    var data = ["Acao", "RPG", "Corrida"];
-    var casosAcumulados = [23,44, 77];
+    var data = ["Computador", "Xbox360", "XboxOne"];
+    var casosAcumulados = [19, 3, 40];
 
     var ctx = document.getElementById('grafico2').getContext('2d');
     
@@ -63,7 +63,7 @@ function grafico2sp(){
             labels: data,
             datasets: [{ 
                 data: casosAcumulados,
-                label: "Casos notificados",
+                label: "Quantidades",
                 borderColor: "#3e95cd",
                 backgroundColor: 'rgb(0, 139, 139)',
                 }
@@ -74,13 +74,13 @@ function grafico2sp(){
         options: {
             title: {
                 display: true,
-                text: 'CASOS E ÓBITOS POR ESTADO'
+                text: 'Plataformas'
             }, 
             scales: {
                 yAxes: [{
                   ticks: {
                     min: 0,
-                    max: parseInt(casosAcumulados[casosAcumulados.length-1])+500,
+                    max: parseInt(casosAcumulados[casosAcumulados.length-1])+40,
                     stepSize: 10000
                   }
                 }]
